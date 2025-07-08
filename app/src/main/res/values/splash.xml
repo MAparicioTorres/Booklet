@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AnimatedSplash.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/avd_booklet
+        </item>
+        <item name="postSplashScreenTheme">@style/Theme.Booklet_TFG_v1</item>
+
+    </style>
+
+</resources>

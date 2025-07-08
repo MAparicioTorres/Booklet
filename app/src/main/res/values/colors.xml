@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="charcoal">#404258</color>
+    <color name="independence">#474E68</color>
+    <color name="purple_navy">#50577A</color>
+    <color name="rhythm">#6B728E</color>
+
+    <!-- Colores para el rating -->
+    <color name="dark_green">#00602b</color>
+    <color name="dark_red">#7b0100</color>
+    <color name ="diamond">#4FD9F9</color>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/frame_layout_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/material_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:menu="@menu/toolbar_details_menu"
+            app:navigationIcon="@drawable/icon_back_arrow"
+            app:title="Detalles"
+            app:titleTextAppearance="@style/TextAppearance.Material3.TitleLarge"
+            app:titleTextColor="@color/charcoal" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            tools:context=".ui.showdetailsbook.BookDetailsActivity">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_view_book_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_view_book_cover"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/no_book_cover" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view_book_cover">
+
+                <TextView
+                    android:id="@+id/text_view_book_start_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="23/12/1998" />
+
+                <TextView
+                    android:id="@+id/text_view_book_end_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_book_start_date_value"
+                    tools:text="23/12/1998" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/charcoal"
+                app:layout_constraintTop_toBottomOf="@id/constraint_layout_dates" />
+
+            <TextView
+                android:id="@+id/text_view_rating_badge"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rating_background"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_divider"
+                tools:text="8.5" />
+
+            <TextView
+                android:id="@+id/text_view_book_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text_view_rating_badge"
+                app:layout_constraintTop_toTopOf="@id/text_view_rating_badge"
+                tools:text="Project Hail Mary" />
+
+            <TextView
+                android:id="@+id/text_view_book_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/text_view_book_title"
+                app:layout_constraintStart_toStartOf="@id/text_view_book_title"
+                app:layout_constraintTop_toBottomOf="@id/text_view_book_title"
+                tools:text="Andy Weir" />
+
+            <TextView
+                android:id="@+id/text_view_book_genre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@id/text_view_book_author"
+                app:layout_constraintStart_toStartOf="@id/text_view_book_author"
+                app:layout_constraintTop_toBottomOf="@id/text_view_book_author"
+                tools:text="Thriller, Sci-Fi" />
+
+            <TextView
+                android:id="@+id/text_view_summary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_view_border"
+                android:padding="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_rating_badge"
+                tools:text="@string/lorem_ipsum" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

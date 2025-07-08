@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Booklet</string>
+    <string name="lorem_ipsum">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </string>
+    <string name="boton_aniadir_libro_content_description">Botón añadir libro</string>
+    <string name="book_cover_url_edit_text_hint">Portada (URL)</string>
+    <string name="edit_text_title_hint">Título</string>
+    <string name="edit_text_author_hint">Autor</string>
+    <string name="text_input_select_genre_hint">Género</string>
+    <string name="text_input_layout_start_date_hint">Fecha de inicio</string>
+    <string name="text_input_layout_end_date_hint">Fecha de finalización</string>
+    <string name="text_input_layout_rating_hint">Nota</string>
+    <string name="text_input_layout_summary_hint">Resumen</string>
+    <string name="button_back_text">Volver</string>
+    <string name="button_save_text">Guardar</string>
+    <string name="toolbar_delete_action_title">Eliminar</string>
+    <string name="toolbar_edit_action_title">Editar</string>
+    <string name="text_input_select_status_hint">Estado de lectura</string>
+</resources>
